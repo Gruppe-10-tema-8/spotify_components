@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Circular";
+  src:
+    url("../src/assets/spotify_font/Circular-Black.woff2") format("woff2"),
+    url("../src/assets/spotify_font/Circular-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src:
+    url("../src/assets//helvetica-neue/HelveticaNeue-Roman.woff2")
+      format("woff2"),
+    url("../src/assets/helvetica-neue/HelveticaNeue-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url("../src/assets//helvetica-neue/HelveticaNeueLight.woff2")
+    format("woff2");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+figcaption {
+  font-family: "Circular";
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(252, 252, 252);
+}
+
+h3 {
+  font-family: "Helvetica Neue Light";
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+p {
+  font-family: "Helvetica Neue Light";
+  color: rgb(142, 142, 142);
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+
+body {
+  background-color: rgb(33, 33, 33);
+}

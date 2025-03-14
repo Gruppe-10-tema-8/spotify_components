@@ -1,0 +1,62 @@
+---
+const { imgsrc, mix, number, artists, color } = Astro.props;
+---
+
+<article>
+  <figure>
+    <img src={imgsrc} alt="" />
+    <div class="figcaptions">
+      <figcaption class="mix" style=`background-color:${color}`>
+        {mix}
+      </figcaption>
+      <figcaption class="number" style=`background-color:${color}`>
+        {number}
+      </figcaption>
+    </div>
+  </figure>
+  <p>{artists}</p>
+</article>
+
+<style>
+  article {
+    margin: 0;
+    padding: 0;
+  }
+
+  figure {
+    display: grid;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .figcaptions {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80%;
+  }
+
+  .mix {
+    height: 20%;
+    padding: 2px 5px 9px 5px;
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  .number {
+    height: 40%;
+    padding: 0px 5px 18px 5px;
+    margin-right: 5px;
+    font-size: 40px;
+
+    letter-spacing: 1px;
+  }
+</style>
